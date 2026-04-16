@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+    entityID="https://sts.windows.net/995b0936-48d6-40e5-a31e-bf689ec9446f/">
+    <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <X509Data>
+                    <X509Certificate>
+                        MIID0jCCAroCCQCfRIxwgGf43TANBgkqhkiG9w0BAQsFADCBqjELMAkGA1UEBhMCVVMxFjAUBgNVBAgMDU5ldyBIYW1wc2hpcmUxEDAOBgNVBAcMB0hhbm92ZXIxGjAYBgNVBAoMEURhcnRtb3V0aCBDb2xsZWdlMSYwJAYDVQQDDB1UcnVzdGVlcyBvZiBEYXJ0bW91dGggQ29sbGVnZTEtMCsGCSqGSIb3DQEJARYea2VtZW55LWl0Y0BjbG91ZC5kYXJ0bW91dGguZWR1MB4XDTI2MDMxNjE0Mzk0NFoXDTM2MDMxMzE0Mzk0NFowgaoxCzAJBgNVBAYTAlVTMRYwFAYDVQQIDA1OZXcgSGFtcHNoaXJlMRAwDgYDVQQHDAdIYW5vdmVyMRowGAYDVQQKDBFEYXJ0bW91dGggQ29sbGVnZTEmMCQGA1UEAwwdVHJ1c3RlZXMgb2YgRGFydG1vdXRoIENvbGxlZ2UxLTArBgkqhkiG9w0BCQEWHmtlbWVueS1pdGNAY2xvdWQuZGFydG1vdXRoLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJwLroeNZwTxkOfnwBl/70E5zL1s3ytyRhrPA4WYrupSeliGRWbod2ZpDFSA15Uu17Cdcu4vU1hZWBlgVd7rVN9gKAtO0QL6UcdA1G1fGqA6RJaVDErn9e7LZwyMTD6ibIia+CcAqqVh6DU2yUuqz8dq5XInlgmLfI97+B5RA7MGorId36tXTo+7iN6X/GViyIKNNHVLAVvspU1iCrt8N3ar1oogps/3CsvpP7PqYJJMVEwwqDcrHuZ3ixu3JjAaYAcH5zidz14Cr2voQ5a5z3pPdrbRBDKBJ6dsHh9OutOuJZIkDOks7i2hRaGMflAk1JHeEiSyV0g4pofI/hjlhMCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAksJnl0hrsfXcWp/IKDfUEPGYJ1aNOv8zPIdVVzp+esSqf6aqEus3f+T2DTcBRQ3WUA/ZdEzNlxSDakU/cI7/fOtPiJBKq55DVokTW0P6IRt31F4r6dYwmDf4fLnvALoaOUjPp3xs7Q9AUjrv94Ra/zsGbN81eo61dghRGbCywVudynvWIMe2R6zpDV0X2MGAbn6ZNXGx82uMlyZ4ZMmvBxHIDTQl2ITc9FMdEXVsoDQSDZ0PYxr+7ueSF6sgr9DnQXBgAnPzGmFs6r0it9RW2gQFiwuXlu9JObWlDEEdpqMAdTMS53IbimQ65W9yp+w1H6n+lNAloK1F8jtqkQpJoA==</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </KeyDescriptor>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+            Location="https://logout.dartmouth.edu" />
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+            Location="https://login.microsoftonline.com/995b0936-48d6-40e5-a31e-bf689ec9446f/saml2" />
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+            Location="https://login.microsoftonline.com/995b0936-48d6-40e5-a31e-bf689ec9446f/saml2" />
+    </IDPSSODescriptor>
+</EntityDescriptor>
